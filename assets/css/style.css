@@ -19,8 +19,8 @@
 }
 
 @font-face {
-    font-family: 'Your Font Name';
-    src: url('../fonts/yourfontname/yourfontname-italic.woff2');
+    font-family: 'BBBReadMeBold';
+    src: url('../fonts/BBBReadMe/BBBReadMe-Bold.woff2');
     font-weight: bold;
     font-style: normal;
     font-display: block;
@@ -37,7 +37,7 @@
   --color-text-link: rgba(255, 81, 0, 0.8);
   --color-text-link-hover: rgba(255, 81, 0, 0.4);
   /* Font values */
-  --font-text: 'BBBReadMe', 'Helvetica', 'Arial', sans-serif;
+  --font-text: 'BBBReadMe', 'BBBReadMeBold', 'Helvetica', 'Arial', sans-serif;
   --font-size: 24px;
   /* Margin values */
   --margin: 1rem;
@@ -106,19 +106,22 @@ main{
   color: #7e6f6c;
   /*background-color: #ffffff;*/
 }
-/*
+
+
 .opening{
  width: 83.33vw;
- align-self: center;
+ align-self: flex-end;
 }
 .trying{
   width: 50vw;
+  align-self: center;
 }
 .theory{
   width: 66.67vw;
+  align-self: flex-end;
 }
 
-*/
+
 
 
 
@@ -131,6 +134,10 @@ h1{
     10vw,
     calc(var(--font-size-heading) * 10)
   );
+  font-family: 'BBBReadMeBold';
+  -webkit-text-stroke: 3vw #ffffff;
+  paint-order: stroke fill;
+
 }
 
 h2{
@@ -139,6 +146,8 @@ top: 0;
 margin-left: 0;
 padding: 10px 0px 10px;
 background: #fff3e5;
+font-family: 'BBBReadMeBold';
+
 }
 
 
@@ -165,12 +174,8 @@ color: #007a48
   font-size: 0.75rem;
   line-height: 100%;
 }*/
-
-p.poem {
-  margin: 0;
-  text-indent: 0;
-  text-align: center;
-  color: #8a2be2;
+.indent{
+text-indent: 5vw;
 }
 
 img{
