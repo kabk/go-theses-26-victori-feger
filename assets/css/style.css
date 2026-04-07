@@ -1,15 +1,5 @@
 @charset "UTF-8";
 
-
-
-/* @FONT FACE (enable the use of 'custom fonts' inside your document) */
-
-/* 
-  You can use 'fontsquirrel' (https://www.fontsquirrel.com) 
-  or 'transfonter' (https://transfonter.org)
-  to generate your own font for the web from .ttf or .oft files 
-*/
-
 @font-face {
     font-family: 'BBBReadMe';
     src: url('../fonts/BBBReadMe/BBBReadMe-Regular.woff2');
@@ -27,11 +17,7 @@
 }
 
 
-
-/* VARIABLES */
-
 :root {
-  /* Color values */
   --color-background: rgb(255, 243, 229);
   --color-text: #494342;
   --color-text-link: rgba(255, 81, 0, 0.8);
@@ -39,11 +25,9 @@
   /* Font values */
   --font-text: 'BBBReadMe', 'BBBReadMeBold', 'Helvetica', 'Arial', sans-serif;
   --font-size: 24px;
-  /* Margin values */
+
   --margin: 1rem;
 
-
-  /* Examples of possible variables */
 
   --font-size-heading: calc(var(--font-size) * 2);
   --font-size-subheading: calc(var(--font-size) * 1.25);
@@ -59,7 +43,6 @@
 
 
 
-/* GENERAL STYLES */
 
 html {
   font: var(--font-size) var(--font-family);
@@ -101,10 +84,7 @@ main{
 }
 
 .clarity{
- /* width: 50vw;
-  align-self: flex-end;*/
-  color: #7e6f6c;
-  /*background-color: #ffffff;*/
+  color: #8f807d;
 }
 
 
@@ -128,16 +108,12 @@ main{
 
 
 h1{
-  /* h1 style */
   font-size: clamp(
     var(--font-size-heading),
     10vw,
     calc(var(--font-size-heading) * 10)
   );
   font-family: 'BBBReadMeBold';
-  -webkit-text-stroke: 3vw #ffffff;
-  paint-order: stroke fill;
-
 }
 
 h2{
@@ -152,7 +128,6 @@ font-family: 'BBBReadMeBold';
 
 
 p{
-  /*text-indent: 2em;*/
   margin: 0;
 }
 
@@ -169,11 +144,6 @@ color: #007a48
   color: #5c2d91
 }
 
-/*p.small{
-  margin-bottom: 0;
-  font-size: 0.75rem;
-  line-height: 100%;
-}*/
 .indent{
 text-indent: 5vw;
 }
@@ -184,57 +154,10 @@ img{
   margin-top: 0.5rem;
 }
 
-
-
-
-
-ol, ul{
-  /* ordered list and unordered list styles */
-}
-
-blockquote{
-  /* blockquote element style */
-}
-
-hr{
-  /* horizontal rule style */
-}
-
-
-
-/* PAGE STYLES */
-
-/* page structure */
-
 div.page-wrapper {
-  /* the element that 'wraps' everything */
   padding: var(--margin);
 }
 
-/* navigation */
- 
-nav{
-  
-}
-
-/* content */
-
-main{
- 
-}
-
-summary{
-  
-}
-
-
-
-
-
-
-/* UTILITY CLASSES */
-
-/* hide desktop mobile etc */
 
 .desktop-only {
   display: block;
@@ -245,12 +168,6 @@ summary{
 }
 
 
-
-
-
-/* WEBSITE MEDIA QUERIES */
-
-/* responsive typeface for various breaking points, sets the default 'rem' value */
 @media (max-width: 299px) { :root{--font-size: 14px;} html, body {font: var(--font-size) var(--font-text); } }
 @media (min-width: 299px) and (max-width: 340px) { :root{--font-size: 15px;} html, body {font: var(--font-size) var(--font-text); } }
 @media (min-width: 340px) and (max-width: 440px) { :root{--font-size: 16px;} html, body {font: var(--font-size) var(--font-text); } }
@@ -260,16 +177,12 @@ summary{
 @media (min-width: 1201px) and (max-width: 1320px) { :root{--font-size: 22px;} html, body {font: var(--font-size) var(--font-text); } }
 @media (min-width: 1321px) { :root{--font-size: 24px;} html, body {font: var(--font-size) var(--font-text); } }
 
-/* styles for 'mobile', screen sizes up to 779px, should covers 'mobile' and 'tablet' */
-/* style this one first and then use the subsequent ones in a cascading way (from general to specific) */
 
 @media (max-width: 779px) {
 
-  /* your 'mobile' overriding css properties here */
-
   .opening{
-  width: 90vw;
-  align-self: flex-end;
+  width: 75vw;
+  align-self: flex-start;
   }
   .trying{
     width: 75vw;
@@ -281,7 +194,6 @@ summary{
   }
 
   h1{
-  /* h1 style */
   font-size: clamp(
     var(--font-size-heading),
     15vw,
@@ -290,8 +202,6 @@ summary{
 
 }
 
-
-  /* utility classes, mobile */
 
   .desktop-only{
     display:none;
@@ -305,32 +215,19 @@ summary{
 
 
 
-/* use this query to apply style changes to smaller smartphones sizes (like an iPhone 5S or SE 2016), max size of 339px */
 
 @media (max-width: 339px) {
 
-  /* your overriding css properties here */
-
+  .opening{
+  width: 100vw;
+  align-self: flex-start;
+  }
+  .trying{
+    width: 100vw;
+    align-self: flex-start;
+  }
+  .theory{
+    width: 100vw;
+    align-self: flex-start;
+  }
 }
-
-
-
-/* use this query to apply style changes for 'mobile' screen sizes that are flipped in 'landscape' mode */
-
-@media (max-width: 779px) and (orientation: landscape) {
-
-   /* your overriding css properties here */
-
-}
-
-
-
-/* use this query to apply style for 'small' desktop screens */
-
-@media (min-width: 780px) and (max-width: 992px) {
-
-  /* your overriding css properties here */
-
-}
-
-
