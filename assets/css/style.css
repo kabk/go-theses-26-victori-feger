@@ -267,7 +267,18 @@ summary{
 
   /* your 'mobile' overriding css properties here */
 
-
+  .opening{
+  width: 90vw;
+  align-self: flex-end;
+  }
+  .trying{
+    width: 70vw;
+    align-self: center;
+  }
+  .theory{
+    width: 80vw;
+    align-self: flex-end;
+  }
 
 
 
