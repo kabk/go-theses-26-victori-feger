@@ -251,9 +251,9 @@ summary{
 /* WEBSITE MEDIA QUERIES */
 
 /* responsive typeface for various breaking points, sets the default 'rem' value */
-@media (max-width: 299px) { :root{--font-size: 12px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 299px) and (max-width: 340px) { :root{--font-size: 13px;} html, body {font: var(--font-size) var(--font-text); } }
-@media (min-width: 340px) and (max-width: 440px) { :root{--font-size: 14px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (max-width: 299px) { :root{--font-size: 13px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 299px) and (max-width: 340px) { :root{--font-size: 14px;} html, body {font: var(--font-size) var(--font-text); } }
+@media (min-width: 340px) and (max-width: 440px) { :root{--font-size: 15px;} html, body {font: var(--font-size) var(--font-text); } }
 @media (min-width: 441px) and (max-width: 779px) { :root{--font-size: 16px;} html, body {font: var(--font-size) var(--font-text); } }
 @media (min-width: 780px) and (max-width: 992px) { :root{--font-size: 18px;} html, body {font: var(--font-size) var(--font-text); } }
 @media (min-width: 993px) and (max-width: 1200px) { :root{--font-size: 20px;} html, body {font: var(--font-size) var(--font-text); } }
@@ -272,11 +272,11 @@ summary{
   align-self: flex-end;
   }
   .trying{
-    width: 70vw;
+    width: 60vw;
     align-self: center;
   }
   .theory{
-    width: 80vw;
+    width: 75vw;
     align-self: flex-end;
   }
 
